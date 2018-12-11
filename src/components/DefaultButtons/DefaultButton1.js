@@ -12,9 +12,9 @@ const styles = StyleSheet.create({
     button: {
       padding: 10,
       margin: 5,
-      borderRadius: 20,
+      borderRadius: 10,
       alignItems: 'center',
-      width: '80%',
+      width: '85%',
       alignSelf:"center"
     }
 })

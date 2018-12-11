@@ -3,8 +3,8 @@ import { StyleSheet, Text, View} from 'react-native';
 import { createStackNavigator, createSwitchNavigator } from 'react-navigation'
 import FrontPageScreen from './src/components/screens/FrontPage/FrontPageScreen'
 import HomeScreen from './src/components/screens/HomeScreen'
-import WhatWeDoNav from './src/components/Navigators/WhatWeDo/WhatWeDoNav/WhatWeDoNav'
-
+import MainDrawers from './src/components/Navigators/MainDrawers/MainDrawers'
+import IndustriesStack from './src/components/Navigators/Industries/IndustriesStack/IndustriesStack'
 
 
 export default class App extends Component {
@@ -18,7 +18,7 @@ export default class App extends Component {
 const SwitchNav = createSwitchNavigator({
   FrontPage: FrontPageScreen,
   Home: HomeScreen,
-  WhatWeDo: WhatWeDoNav
+  Entry: MainDrawers
   },
  {
    initialRouteName: 'FrontPage'

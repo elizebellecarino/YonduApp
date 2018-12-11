@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, SafeAreaView, ScrollView, Dimensions } from 'react-native'
 import {createDrawerNavigator, DrawerItems} from 'react-navigation'
-import WhatWeDoStack from '../WhatWeDoStack/WhatWeDoStack'
-import IndustriesScreen from '../../../screens/HomePage/IndustriesScreen'
-import InsightsScreen from '../../../screens/HomePage/InsightsScreen'
-import CareersScreen from '../../../screens/HomePage/CareersScreen'
-import AboutYonduScreen from '../../../screens/HomePage/AboutYonduScreen'
-import ContactUsScreen from '../../../screens/HomePage/ContactUsScreen'
+import WhatWeDoStack from '../WhatWeDo/WhatWeDoStack/WhatWeDoStack'
+import IndustriesStack from '../Industries/IndustriesStack/IndustriesStack'
+import InsightsStack from '../Insights/InsightsStack/InsightsStack'
+import CareersScreen from '../../screens/HomePage/CareersScreen'
+import AboutYonduScreen from '../../screens/HomePage/AboutYonduScreen'
+import ContactUsScreen from '../../screens/HomePage/ContactUsScreen'
 
 const Drawer = (props) => (
     <SafeAreaView style={{ flex: 1 }}>
@@ -18,10 +18,10 @@ const Drawer = (props) => (
     </SafeAreaView>
 
 )
-const WhatWeDoNav = createDrawerNavigator({
+const MainDrawers = createDrawerNavigator({
   'What We Do?': WhatWeDoStack,
-  'Industries': IndustriesScreen,
-  'Insights': InsightsScreen,
+  'Industries': IndustriesStack,
+  'Insights': InsightsStack,
   'Careers': CareersScreen,
   'About Yondu': AboutYonduScreen,
   'Contact Us': ContactUsScreen,
@@ -54,4 +54,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default WhatWeDoNav;
+export default MainDrawers;

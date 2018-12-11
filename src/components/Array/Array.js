@@ -21,6 +21,22 @@ export const solutions =
         name: 'Enterprise Solutions'
       }
     ]
+
+    export const services = 
+    [
+      {
+         name: 'Web Application Development'
+      },
+      {
+         name: 'Mobile Application Development'
+      },
+      {
+         name: 'Enterprise Solutions'
+      },
+      {
+         name: 'Systems Integration'
+      }
+    ]
   
 export const whatWeDoContent = [
   {
@@ -83,4 +99,28 @@ export const whatWeDoContent = [
         "Document Management System"
  ]
  }
+]
+
+export const insights = [
+   {
+       id: 0,
+       title: "Lorem ipsum dolor sit amet",
+       details: "Quisque a est vel tortor lobortis scelerisque vitae id risus.",
+       subTitle: "SOLUTIONS -",
+       date: "Nov 7, 2018"
+   },
+   {
+       id: 1,
+       title: "Lorem ipsum dolor sit amet",
+       details: "Quisque a est vel tortor lobortis scelerisque vitae id risus.",
+       subTitle: "SOLUTIONS -",
+       date: "Nov 7, 2018"
+   },
+   {
+       id: 2,
+       title: "Lorem ipsum dolor sit amet",
+       details: "Quisque a est vel tortor lobortis scelerisque vitae id risus.",
+       subTitle: "SOLUTIONS -",
+       date: "Nov 7, 2018"
+   }
 ]

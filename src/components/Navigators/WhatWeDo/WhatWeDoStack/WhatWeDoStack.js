@@ -7,7 +7,7 @@ import GetAQuoteScreen from '../../../screens/WhatWeDo/GetAQuote/GetAQuoteScreen
 import ThankYouScreen from '../../../screens/WhatWeDo/ThankYouScreen/ThankYouScreen'
 
 export default WhatWeDoStack = createStackNavigator({
-        Home:{
+        WhatWeDo:{
             screen:WhatWeDoScreen,
             navigationOptions:
               ({navigation}) =>  {

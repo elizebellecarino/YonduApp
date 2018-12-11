@@ -3,15 +3,18 @@ import { View, Text, StyleSheet} from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 import {whatWeDoContent} from '../../../Array/Array'
 
+
 class Content extends Component{
     state={
         items: whatWeDoContent
     }
   render(){
+    
     return(
         <View>
           {this.state.items.map((item,key) => {
             return(
+              
               <View style={styles.blockContent} key={key}>
                 <View style={styles.iconTitleContent}>
                   <View style={styles.iconContent}>
@@ -31,9 +34,11 @@ class Content extends Component{
              }
             </View>
             </View>
+           
             )
         }
-        )}</View>
+        )}
+        </View>
     )
 }
 }
@@ -43,20 +48,26 @@ const styles = StyleSheet.create({
   blockContent:{
     flex:1,
     alignItems: 'flex-start',
-    margin: 10,
-    marginLeft: 10,
-    marginRight: 10,
-    borderLeftWidth: 3,
+    alignItems: 'flex-start',
+    margin: 20,
+    marginVertical: 10,
+    elevation: 15,
+    width: '88%',
+    borderLeftWidth: 4,
     borderLeftColor: '#66CC99',
-    backgroundColor: 'white'
+    backgroundColor: 'white', 
+    paddingVertical: 15
   },
   iconTitleContent:{
     flex: 2,
     flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   iconContent:{
     flex: 3,
-    alignItems: 'center'
+    alignItems: 'flex-end',
+    paddingRight: 10
   },
   titleContent:{
     flex: 10,
@@ -71,7 +82,6 @@ const styles = StyleSheet.create({
   subContent:{
     flex: 4,
     alignItems: 'flex-start',
-    justifyContent: 'flex-start',
     paddingLeft: 35
   },
   subContentText:{
